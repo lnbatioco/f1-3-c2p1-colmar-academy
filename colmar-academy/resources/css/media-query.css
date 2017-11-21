@@ -1,0 +1,152 @@
+/* START mobile view */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+
+  .center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    margin: 0;
+  }
+
+  .left, .right, .full-width {
+    width: 100%;
+  }
+
+/* ///----- H E A D E R -----/// */
+  #logo, nav {
+    display: none;
+  }
+
+  header {
+    height: 8rem;
+  }
+
+  #nav-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-mobile ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #nav-mobile li img{
+    height: 5rem;
+    margin: 0rem 6rem;
+  }
+
+/* ///----- B A N N E R -----/// */
+
+  #banner .left img {
+    opacity: none;
+  }
+
+  #banner .right {
+    padding: 4rem 2rem;
+  }
+
+  #banner h1 {
+    text-transform: none;
+  }
+
+  #banner h2 {
+    margin: 4rem 0 3rem 0;
+  }
+
+  .start-button {
+    width: 60%;
+    padding: 2rem 0;
+    text-transform: none;
+  }
+
+  /* ///----- S C H O O O L -----/// */
+
+  #school .left {
+    display: none;
+  }
+
+  #school .right {
+    padding: 0;
+  }
+
+  .article {
+    height: auto;
+    border: none;
+    flex-direction: column;
+  }
+
+  .article img {
+    display: none;
+  }
+
+  .article img.mobile {
+    max-width: 95%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+  }
+
+  .info {
+    margin-left: 2rem;
+  }
+
+/* ///----- C O U R S E S -----/// */
+
+    a.course img, .course-info p {
+      display: none;
+    }
+
+    .course-list {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a.course {
+      width: 100%;
+      margin: 0 0 1rem;
+      background-color: #E0E0E0;
+      box-shadow: none;
+    }
+
+    .course-info h1 {
+      margin: 2rem 0 2rem 1rem;
+    }
+
+    #thesis div.title h1,
+    #courses div.title h1 {
+      font-size: 4.5rem;
+      border-bottom: none;
+    }
+
+  /* ///----- T H E S I S -----/// */
+
+  #thesis .center h1, #thesis p, #thesis .right {
+      display: none;
+    }
+}
+/* END - mobile view */
+
+
+@media only screen and (min-width: 769px) {
+  #nav-mobile {
+    display: none;
+  }
+  .article img.mobile {
+    display: none;
+  }
+}
